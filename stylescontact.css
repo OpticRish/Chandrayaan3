@@ -1,0 +1,105 @@
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://www.isro.gov.in/media_isro/image/index/Chandrayaan3/R_img4.png.webp"); 
+    color: black;
+}
+
+header {
+   
+    color: #90ee90; /* aqua text */
+    padding: 40px;
+    text-align: center;
+    animation: fadeInDown 1s ease;
+    position: relative;
+}
+
+header img {
+    width: 150px; /* Adjust the size of the logo */
+    height: auto;
+    margin-right: 10px;
+}
+
+h1 {
+    display: inline-block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    animation: fadeIn 1s ease;
+}
+
+nav a {
+    text-decoration: none;
+    color: #7fffd4; /* Yellow links */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0074cc; /* Light blue on hover */
+}
+
+main {
+    padding: 40px;
+    animation: zoomIn 1s ease;
+    text-align: center;
+}
+
+footer {
+    background-color: #ADD8E6; /* Dark blue footer */
+    color: #fff;
+    text-align: center;
+    padding: 6px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: fadeInUp 2s ease;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

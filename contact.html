@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylescontact.css">
+    <title>Chandrayaan-3 Mission</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+        </div>
+        <div class="title">
+            
+           <h1><font color="pink"><u><style>
+                              .blink{
+				animation: blinker 1.5s linear infinite;
+								color: aqua;
+								font-family: Comic Sans MS;}
+					@keyframes blinker{
+									50%{
+											opacity : 0;}
+								}
+							</style>
+
+
+
+              <marquee class="blink">
+             WELCOME</marquee></u></font></h1><br>
+            <h1><u>CHANDRAYAAN-3 MISSION</u></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="mission_overview.html"><u>Mission Overview</a></li>
+                <li><a href="launch_details.html">Launch Details</a></li>
+                <li><a href="scientific_instruments.html">Scientific Instruments</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Contact</u></a></li>
+            </ul>
+        </nav>
+    </header>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        .contact-parent {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        .contact-child {
+            width: 45%;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+        }
+        .child1 {
+            margin-right: 5%;
+        }
+        .inside-contact {
+            margin-top: 20px;
+        }
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="contact-parent">
+            <div class="contact-child child1">
+                <p><i class="fas fa-map-marker-alt"></i> Address<br><span>Rishabh Space Agency<br>Hyderabad, India</span></p>
+                <p><i class="fas fa-phone-alt"></i> Let's Talk<br><span></span></p>
+                <p><i class="far fa-envelope"></i> General Support<br><span>rish15r890@gmail.com</span></p>
+                               <p>Credit of image @ISRO</p>
+            </div>
+            <div class="contact-child child2">
+                <div class="inside-contact">
+                    <h2>Contact Us</h2>
+                    <h3><span id="confirm"></span></h3>
+                    <p>Name *</p>
+                    <input id="txt_name" type="text" Required="required">
+                    <p>Email *</p>
+                    <input id="txt_email" type="text" Required="required">
+                    <p>Phone *</p>
+                    <input id="txt_phone" type="text" Required="required">
+                    <p>Subject *</p>
+                    <input id="txt_subject" type="text" Required="required">
+                    <p>Message *</p>
+                    <textarea id="txt_message" rows="4" cols="20" Required="required"></textarea>
+                    <input type="submit" id="btn_send" value="SEND"><br>
+<br>
+
+</body>
+</html>
