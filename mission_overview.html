@@ -1,56 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Chandrayaan-3 Mission</title>
 </head>
+
 <body>
+    <div id="progress-bar"></div>
     <header>
-        <div class="logo">
-        </div>
-        <div class="title">
-            
-           
-            <h1><marquee>Chandrayaan-3 Mission</marquee></h1>
+        <div class="logo" style="font-size: 1.5rem; font-weight: bold; color: #fff; letter-spacing: 2px;">
+            <a href="index.html" style="color: #fff; text-decoration: none;">CHANDRAYAAN</a>
         </div>
         <nav>
             <ul>
-                <li><a href="mission_overview.html"><u>Mission Overview</a></li>
+                <li><a href="mission_overview.html">Mission Overview</a></li>
                 <li><a href="launch_details.html">Launch Details</a></li>
                 <li><a href="scientific_instruments.html">Scientific Instruments</a></li>
                 <li><a href="team.html">Team</a></li>
-                <li><a href="contact.html">Contact</u></a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-    <header>
-        <p><h3>Mission overview</h3></p>
-    </header>
+        <div class="title" style="margin-bottom: 30px;">
+            <h1 style="color: #90ee90;">
+                <marquee>Chandrayaan-3 Mission</marquee>
+            </h1>
+        </div>
+        <header>
+            <p>
+            <h3>Mission overview</h3>
+            </p>
+        </header>
     </main>
-     <center>
-    <p>"India’s third lunar mission, Chandrayaan – 3 made history on August 23, 2023, by<br> successfully achieving a soft landing on the south pole of the moon. With<br>  this, India became the first nation to land on the moon’s south pole and the <br> fourth (after Russia, the US and China) to land successfully on Earth’s only<br>  natural satellite. In this article, you will learn all you need to know about the <br> Chandrayaan III.<br> 
-
-<h3><font color="#00FF00">Chandrayaan-3 Mission</font></h3>
-The Indian Space Research Organisation (ISRO) had undertaken two previous missions <br> to the moon, namely, the Chandrayaan I and the Chandrayaan II.<br>  Chandrayaan-1 was launched in 2008 and lasted till <br> 2009 after communications to it were lost. The mission, among other things, tested a <br> crash landing on the lunar surface. Chandrayaan-2, launched in 2019 <br> attempted a soft landing on the moon but failed. The third mission,<br>  Chandrayaan-3 took into account the drawbacks and lessons learnt from the <br> second mission and successfully achieved soft landing.<br> 
-<h5><font color="#00FF00">Objectives of Chandrayaan 3 Mission</font></h5>
     <center>
-→ To demonstrate a safe and soft landing on the lunar surface<br>
-→ To demonstrate rover roving on the moon<br>
-→ To conduct in-situ scientific experiments<br></center>
- </center>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+        <p>"India’s third lunar mission, Chandrayaan – 3 made history on August 23, 2023, by<br> successfully achieving
+            a soft landing on the south pole of the moon. With<br> this, India became the first nation to land on the
+            moon’s south pole and the <br> fourth (after Russia, the US and China) to land successfully on Earth’s
+            only<br> natural satellite. In this article, you will learn all you need to know about the <br> Chandrayaan
+            III.<br>
+
+        <h3>
+            <font color="#00FF00">Chandrayaan-3 Mission</font>
+        </h3>
+        The Indian Space Research Organisation (ISRO) had undertaken two previous missions <br> to the moon, namely, the
+        Chandrayaan I and the Chandrayaan II.<br> Chandrayaan-1 was launched in 2008 and lasted till <br> 2009 after
+        communications to it were lost. The mission, among other things, tested a <br> crash landing on the lunar
+        surface. Chandrayaan-2, launched in 2019 <br> attempted a soft landing on the moon but failed. The third
+        mission,<br> Chandrayaan-3 took into account the drawbacks and lessons learnt from the <br> second mission and
+        successfully achieved soft landing.<br>
+        <h5>
+            <font color="#00FF00">Objectives of Chandrayaan 3 Mission</font>
+        </h5>
+        <center>
+            → To demonstrate a safe and soft landing on the lunar surface<br>
+            → To demonstrate rover roving on the moon<br>
+            → To conduct in-situ scientific experiments<br></center>
+    </center>
+    <br>
+    <br>
+    <br>
 
 
     <footer>
-        <p><font color="black">@Rish</p>
+        <p>made with ❤️ by Rishabh<br>designed with elegance 2026</p>
     </footer>
+    <script>
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progress-bar').style.width = scrolled + '%';
+        });
+    </script>
 </body>
+
 </html>
