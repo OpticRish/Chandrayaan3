@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylescontact.css">
     <title>Chandrayaan-3 Mission</title>
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
@@ -13,6 +14,11 @@
     <header>
         <div class="logo" style="font-size: 1.5rem; font-weight: bold; color: #fff; letter-spacing: 2px;">
             <a href="index.html" style="color: #fff; text-decoration: none;">CHANDRAYAAN</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
 
         <nav>
@@ -129,6 +135,18 @@
             padding: 40px 20px !important;
             background: rgba(0, 0, 0, 0.7) !important;
         }
+
+        @media (max-width: 768px) {
+            .contact-parent {
+                flex-direction: column;
+                margin-top: 100px;
+                margin-bottom: 50px;
+            }
+            .contact-child {
+                width: 100%;
+                padding: 25px;
+            }
+        }
     </style>
     </head>
 
@@ -198,6 +216,30 @@
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             const scrolled = (winScroll / height) * 100;
             document.getElementById('progress-bar').style.width = scrolled + '%';
+        });
+
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.querySelector('nav');
+
+        hamburger.addEventListener('click', function() {
+            this.classList.toggle('active');
+            nav.classList.toggle('open');
+        });
+
+        document.addEventListener('click', function(event) {
+            if (nav.classList.contains('open') && !hamburger.contains(event.target)) {
+                if (event.target.tagName !== 'A') {
+                    nav.classList.remove('open');
+                    hamburger.classList.remove('active');
+                }
+            }
+        });
+
+        const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            if (link.getAttribute('href') === currentPath) {
+                link.classList.add('active-link');
+            }
         });
     </script>
     </body>
